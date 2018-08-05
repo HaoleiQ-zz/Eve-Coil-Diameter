@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.we7.cc" versionCode="">
+	
+	<application setting='false'>
+		<name><![CDATA[卷材直径计算器]]></name>
+
+		<identifie><![CDATA[juancai_jisuanqi]]></identifie>
+
+		<version><![CDATA[1.0.3]]></version>
+
+		<ability><![CDATA[1]]></ability>
+
+		<type><![CDATA[services]]></type>
+
+		<description><![CDATA[卷材直径计算器]]></description>
+
+		<author><![CDATA[Haoleiqin]]></author>
+
+		<url><![CDATA[1]]></url>
+
+		<setting><![CDATA[1]]></setting>
+
+	</application>
+
+	
+	<platform>
+		<rule embed="false" />
+
+		<rule embed="false" />
+
+	<supports>
+
+			<item type="app" />
+			<item type="webapp" />
+			<item type="system_welcome" />
+	</supports>
+
+	</platform>
+
+	
+	<bindings>
+
+	</bindings>
+
+	<install><![CDATA[1]]></install>
+	<uninstall><![CDATA[1]]></uninstall>
+	<upgrade><![CDATA[1]]></upgrade>
+</manifest>

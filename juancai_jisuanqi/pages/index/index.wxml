@@ -1,0 +1,34 @@
+<i-panel class="cell-panel-demo">
+  <i-cell bind:click="showMod" title="请选择单位:" is-link value="{{unit}}"></i-cell>
+</i-panel>
+
+<i-panel title="">
+
+  <i-input bind:change='input1' type="digit" right title="卷材总长度({{unit}})" mode="wrapped" placeholder="输入卷材总长度" />
+
+  <i-input bind:change='input2' type="digit" right title="卷材厚度({{unit}})" mode="wrapped" placeholder="输入卷材厚度" />
+
+  <i-input bind:change='input3' value='' type="digit" right title="缠绕用的圆柱直径({{unit}})" mode="wrapped" placeholder="输入圆柱直径" />
+
+</i-panel>
+
+<i-panel title="卷材缠绕弹性伸缩误差比值(每层) (缠绕后厚度/原厚度) 不填写默认为1">
+  <i-input bind:change='input4' type="digit" right title="伸缩误差比" mode="wrapped" placeholder="输入伸缩误差比" />
+</i-panel>
+
+<i-button bind:click="handleClick" type="primary">计算</i-button>
+
+<i-panel title="计算结果">
+
+  <i-input type="number" right title="卷完后总直径({{unit}})" mode="wrapped" disabled placeholder="{{value11}}" />
+
+  <i-input class='boberB' type="number" right title="总共圈数" mode="wrapped" disabled placeholder="{{value22}}" />
+</i-panel>
+
+
+<view class="weui-footer">
+  <view class="weui-footer__links">
+    <navigator target="miniProgram" open-type="navigate" app-id="wxf9ae656211242178" path="pages/web/index" extra-data="" version="release" class="weui-footer__link">iHogo.net</navigator>
+  </view>
+  <view class="weui-footer__text">Copyright © 2008-2019 </view>
+</view>
