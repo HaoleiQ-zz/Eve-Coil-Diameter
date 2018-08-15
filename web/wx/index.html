@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- MDUI样式 -->
+    <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/mdui/0.4.1/css/mdui.min.css">
+    <!-- MDUI框架 -->
+    <script src="https://cdnjs.loli.net/ajax/libs/mdui/0.4.1/js/mdui.min.js"></script>
+    <!-- Vue框架 -->
+    <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.min.js"></script>
+    <title>提示</title>
+    <!-- 引入Element样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入Element组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <style>
+        .el-header {
+            background-color: #B3C0D1;
+            color: #333;
+            line-height: 60px;
+        }
+
+        .el-aside {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <el-container style="border: 1px solid #eee">
+            <el-aside style="background-color: rgb(238, 241, 246)">
+                <el-menu :default-openeds="['1', '3']">
+                    <el-submenu index="1">
+                        <template slot="title">
+                            <i class="el-icon-menu"></i>导航</template>
+                        <el-menu-item-group>
+                            <!-- <template slot="title">分组一</template> -->
+                            <el-menu-item index="2-1" class="el-menu-item el-menu-item is-active">说明</el-menu-item>
+                            <el-menu-item index="2-2">
+                                <a style="text-decoration: none;color: black;" href="../../wxcode.zip" download="wxcode.zip">下载小程序源码</a>
+                            </el-menu-item>
+                            
+                            <el-menu-item index="2-3">
+                                <a style="text-decoration: none;color: black;" href="../../frontendcode.zip" download="wxcode.zip">下载前端源码</a>
+                            </el-menu-item>
+
+                            <el-menu-item index="2-4" onclick="returnB()">返回上页 &nbsp;
+                                <button onclick="returnB()" class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-mini mdui-color-theme-accent">
+                                    <i class="mdui-icon material-icons">chevron_left</i>
+                                </button>
+                            </el-menu-item>
+                        </el-menu-item-group>
+                        <!-- <el-menu-item-group title="分组2">
+                            <el-menu-item index="2-3">选项3</el-menu-item>
+                        </el-menu-item-group> -->
+                    </el-submenu>
+                </el-menu>
+            </el-aside>
+
+            <el-container style="margin-left: 20px;">
+                <div>
+                    <ul class="mdui-list">
+                        <li class="mdui-list-item mdui-ripple">
+                            <div class="mdui-list-item-content">
+                                <div class="mdui-typo">
+                                    <h4> 您可以直接在 微擎后台小程序入口页面,选择左侧菜单中的'上传微信审核'查看小程序即可</h4>
+                                </div>
+                                <!-- <div class="mdui-list-item-text mdui-list-item-two-line">该小程序是工具类小程序,无需后台</div> -->
+                            </div>
+                        </li>
+                    </ul>
+                    <img class="mdui-img-fluid" src="103.png" />
+                </div>
+
+            </el-container>
+        </el-container>
+    </div>
+</body>
+
+<script>
+    function returnB() {
+        window.history.go(-1);
+    }
+
+    window.onload = function () {
+        var item = {
+            date: '2016-05-02',
+            name: '王小虎',
+            address: '上海市普陀区金沙江路 1518 弄'
+        };
+        var app = new Vue({
+            el: '#app',
+            data: {
+                tableData: [item]
+            }
+        });
+    };
+
+</script>
+
+</html>

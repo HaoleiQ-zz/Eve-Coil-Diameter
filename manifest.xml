@@ -6,7 +6,7 @@
 
 		<identifie><![CDATA[juancai_jisuanqi]]></identifie>
 
-		<version><![CDATA[1.0.3]]></version>
+		<version><![CDATA[1.0.5]]></version>
 
 		<ability><![CDATA[1]]></ability>
 
@@ -29,7 +29,7 @@
 		<rule embed="false" />
 
 	<supports>
-
+	        <item type="wxapp" />
 			<item type="app" />
 			<item type="webapp" />
 			<item type="system_welcome" />
@@ -42,7 +42,10 @@
 
 	</bindings>
 
-	<install><![CDATA[1]]></install>
-	<uninstall><![CDATA[1]]></uninstall>
-	<upgrade><![CDATA[1]]></upgrade>
+	<install><![CDATA[]]></install>
+	<uninstall><![CDATA[]]></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
 </manifest>
+
+
+
