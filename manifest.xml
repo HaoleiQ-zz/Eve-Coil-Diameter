@@ -6,7 +6,7 @@
 
 		<identifie><![CDATA[juancai_jisuanqi]]></identifie>
 
-		<version><![CDATA[1.0.5]]></version>
+		<version><![CDATA[1.0.7]]></version>
 
 		<ability><![CDATA[1]]></ability>
 
@@ -39,7 +39,9 @@
 
 	
 	<bindings>
-
+		<menu>
+			<entry title="会员卡设置" do="membercard" state="" direct="false" />
+		</menu>
 	</bindings>
 
 	<install><![CDATA[]]></install>
